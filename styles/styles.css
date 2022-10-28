@@ -1,3 +1,7 @@
-body h1 {
-  color: blue;
+body .mapouter {
+  min-width: 300px;
+  border: 3px solid rgb(var(--bs-light-rgb));
+}
+body .gmap_iframe {
+  height: 400px;
 }/*# sourceMappingURL=styles.css.map */
