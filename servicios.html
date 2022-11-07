@@ -13,13 +13,10 @@
   <meta property="og:image:height" content="1024">
   <meta name="author" content="Escribania SR">
   <link rel="shortcut icon" href="../img/favicon.png" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-    crossorigin="anonymous"></script>
+  <link href="css/styles.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script src="scripts/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
-  <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
@@ -28,8 +25,8 @@
     <nav class="navbar navbar-expand-lg bg-light">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
-          <img src="./img/escribania.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top" />
-          SR Escribanía</a>
+          <img src="./img/sr-logo-vector.svg" alt="Logo" width="30" height="30" class="d-inline-block align-text-top" />
+          Escribanía</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -37,7 +34,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+              <a class="nav-link" aria-current="page" href="./index.html">Inicio</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="/nosotros.html">Nosotros</a>
@@ -52,103 +49,108 @@
               <a class="nav-link" aria-current="page" href="contacto.html">Contacto</a>
             </li>
           </ul>
-          <i class="bi bi-facebook p-1"></i>
-          <i class="bi bi-twitter p-1"></i>
+          <div>
+            <a href="https://www.facebook.com/" class="me-4 text-reset text-decoration-none" target="_blank">
+              <i class="bi bi-facebook"></i>
+            </a>
+            <a href="https://twitter.com/" class="me-4 text-reset text-decoration-none" target="_blank">
+              <i class="bi bi-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com/" class="me-4 text-reset text-decoration-none" target="_blank">
+              <i class="bi bi-instagram"></i>
+            </a>
+          </div>
         </div>
-      </div>
     </nav>
   </header>
   <main class="my-5">
     <div class="container">
-      <h1>Lorem ipsum dolor sit amet.</h1>
-      <p>
+      <h1 class="text-center mb-5">SERVICIOS</h1>
+      <p class="mb-3">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
         cumque aperiam quasi aut minima molestias laborum dolores beatae
         porro quas?
       </p>
-      <p>
+      <p class="m-3">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla
         architecto consequatur totam sit dolor non, neque dolores quia
         corrupti aut!
       </p>
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt iure
-        iste nostrum cum est temporibus tempora repellendus unde non a.
-      </p>
-      <div class="row row-cols-1 row-cols-md-3 g-4">
+
+      <div class="row row-cols-1 row-cols-md-3 g-4 pt-5">
         <div class="col">
-          <div class="card h-100">
-            <img src="img/trabajo.png" class="card-img-top" alt="..." />
+          <div class="card h-100" data-aos="flip-left" data-aos-delay="300" data-aos-duration="2000">
+            <img src="img/actas.jpg" class="card-img-top" alt="imagen de tarjeta de actas" />
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
+              <h5 class="card-title">Actas</h5>
               <p class="card-text">
                 This is a longer card with supporting text below as a
                 natural lead-in to additional content. This content is a
                 little bit longer.
               </p>
-              <a class="btn btn-primary" href="#" role="button">Link</a>
+              <a class="btn btn-primary" href="#" role="button">Consulte aquí</a>
             </div>
           </div>
         </div>
         <div class="col">
-          <div class="card h-100">
-            <img src="img/trabajo.png" class="card-img-top" alt="..." />
+          <div class="card h-100" data-aos="flip-left" data-aos-delay="500" data-aos-duration="2000">
+            <img src="img/certificaciones.jpg" class="card-img-top" alt="imagen de tarjeta de certificaciones" />
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
+              <h5 class="card-title">Certificaciones</h5>
               <p class="card-text">This is a short card.</p>
-              <a class="btn btn-primary" href="#" role="button">Link</a>
+              <a class="btn btn-primary" href="#" role="button">Consulte aquí</a>
             </div>
           </div>
         </div>
         <div class="col">
-          <div class="card h-100">
-            <img src="img/trabajo.png" class="card-img-top" alt="..." />
+          <div class="card h-100" data-aos="flip-left" data-aos-delay="700" data-aos-duration="2000">
+            <img src="img/sociedades.jpg" class="card-img-top" alt="imagen de tarjeta de sociedades" />
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
+              <h5 class="card-title">Sociedades</h5>
               <p class="card-text">
                 This is a longer card with supporting text below as a
                 natural lead-in to additional content.
               </p>
-              <a class="btn btn-primary" href="#" role="button">Link</a>
+              <a class="btn btn-primary" href="#" role="button">Consulte aquí</a>
             </div>
           </div>
         </div>
         <div class="col">
-          <div class="card h-100">
-            <img src="img/trabajo.png" class="card-img-top" alt="..." />
+          <div class="card h-100" data-aos="flip-left" data-aos-delay="900" data-aos-duration="2000">
+            <img src="img/testamentos.jpg" class="card-img-top" alt="imagen de tarjeta de testamentos" />
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
+              <h5 class="card-title">Testamentos</h5>
               <p class="card-text">
                 This is a longer card with supporting text below as a
                 natural lead-in to additional content.
               </p>
-              <a class="btn btn-primary" href="#" role="button">Link</a>
+              <a class="btn btn-primary" href="#" role="button">Consulte aquí</a>
             </div>
           </div>
         </div>
         <div class="col">
-          <div class="card h-100">
-            <img src="img/trabajo.png" class="card-img-top" alt="..." />
+          <div class="card h-100" data-aos="flip-left" data-aos-delay="1100" data-aos-duration="2000">
+            <img src="img/escrituras.jpg" class="card-img-top" alt="imagen de tarjeta de escrituras" />
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
+              <h5 class="card-title">Escrituras</h5>
               <p class="card-text">
                 This is a longer card with supporting text below as a
                 natural lead-in to additional content.
               </p>
-              <a class="btn btn-primary" href="#" role="button">Link</a>
+              <a class="btn btn-primary" href="#" role="button">Consulte aquí</a>
             </div>
           </div>
         </div>
         <div class="col">
-          <div class="card h-100">
-            <img src="img/trabajo.png" class="card-img-top" alt="..." />
+          <div class="card h-100" data-aos="flip-left" data-aos-delay="1300" data-aos-duration="2000">
+            <img src="img/tecnologias.jpg" class="card-img-top" alt="imagen de la tarjeta de nuevas tecnologias" />
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
+              <h5 class="card-title">Nuevas tecnologias</h5>
               <p class="card-text">
                 This is a longer card with supporting text below as a
                 natural lead-in to additional content.
               </p>
-              <a class="btn btn-primary" href="#" role="button">Link</a>
+              <a class="btn btn-primary" href="#" role="button">Consulte aquí</a>
             </div>
           </div>
         </div>
@@ -156,38 +158,35 @@
     </div>
   </main>
   <footer class="text-center text-lg-start bg-light text-muted">
-    <!-- Section: Social media -->
+
     <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-      <!-- Left -->
+
       <div class="me-5 d-none d-lg-block">
         <span>Contactanos a traves de nuestras redes sociales</span>
       </div>
-      <!-- Left -->
 
-      <!-- Right -->
+
       <div>
-        <a href="" class="me-4 text-reset text-decoration-none">
+        <a href="https://www.facebook.com/" class="me-4 text-reset text-decoration-none" target="_blank">
           <i class="bi bi-facebook"></i>
         </a>
-        <a href="" class="me-4 text-reset text-decoration-none">
+        <a href="https://twitter.com/" class="me-4 text-reset text-decoration-none" target="_blank">
           <i class="bi bi-twitter"></i>
         </a>
-        <a href="" class="me-4 text-reset text-decoration-none">
-          <i class="bi bi-google"></i>
+        <a href="https://www.instagram.com/" class="me-4 text-reset text-decoration-none" target="_blank">
+          <i class="bi bi-instagram"></i>
         </a>
       </div>
-      <!-- Right -->
-    </section>
-    <!-- Section: Social media -->
 
-    <!-- Section: Links  -->
+    </section>
+    >
     <section class="">
       <div class="container text-center text-md-start mt-5">
-        <!-- Grid row -->
+
         <div class="row mt-3">
-          <!-- Grid column -->
+
           <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-            <!-- Content -->
+
             <h6 class="text-uppercase fw-bold mb-4">
               <i class="bi bi-gem me-3"></i> SR Escribanía
             </h6>
@@ -197,11 +196,9 @@
               elit.
             </p>
           </div>
-          <!-- Grid column -->
 
-          <!-- Grid column -->
           <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-            <!-- Links -->
+
             <h6 class="text-uppercase fw-bold mb-4">Servicios</h6>
             <p>
               <a href="#!" class="text-reset">Asesorías</a>
@@ -213,32 +210,33 @@
               <a href="#!" class="text-reset">Certificaciones</a>
             </p>
           </div>
-          <!-- Grid column -->
+
           <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-            <!-- Links -->
+
             <h6 class="text-uppercase fw-bold mb-4">Contacto</h6>
-            <p><i class="fas fa-home me-3"></i> 40 N° 420, La Plata, AR</p>
+            <p><i class="fas fa-home me-3"></i> 40 N° 406, La Plata, AR</p>
             <p>
               <i class="fas fa-envelope me-3"></i>
               vszeinfeld@gmail.com
             </p>
             <p><i class="fas fa-phone me-3"></i> + 549 221 455 6909</p>
           </div>
-          <!-- Grid column -->
+
         </div>
-        <!-- Grid row -->
+
       </div>
     </section>
-    <!-- Section: Links  -->
 
-    <!-- Copyright -->
     <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05)">
       © 2022 Copyright: SR Escribanía
       <a class="text-reset fw-bold" href="https://mdbootstrap.com/"></a>
     </div>
-    <!-- Copyright -->
-  </footer>
 
+  </footer>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>

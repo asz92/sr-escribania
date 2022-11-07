@@ -14,13 +14,12 @@
   <title>Escribanía Rodriguez-Szeinfeld</title>
 
   <link rel="shortcut icon" href="./img/favicon.png" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-    crossorigin="anonymous"></script>
+  <link href="css/styles.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <script src="scripts/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
-  <link rel="stylesheet" href="styles/styles.css">
+
 </head>
 
 <body>
@@ -30,8 +29,9 @@
       <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
-            <img src="./img/escribania.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top" />
-            SR Escribanía</a>
+            <img src="./img/sr-logo-vector.svg" alt="Logo" width="30" height="30"
+              class="d-inline-block align-text-top" />
+            Escribanía</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
             aria-label="Toggle navigation">
@@ -40,7 +40,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="./nosotros.html">Nosotros</a>
@@ -55,8 +55,19 @@
                 <a class="nav-link" aria-current="page" href="contacto.html">Contacto</a>
               </li>
             </ul>
-            <i class="bi bi-facebook p-1"></i>
-            <i class="bi bi-twitter p-1"></i>
+
+            <div>
+              <a href="https://www.facebook.com/" class="me-4 text-reset text-decoration-none" target="_blank">
+                <i class="bi bi-facebook"></i>
+              </a>
+              <a href="https://twitter.com/" class="me-4 text-reset text-decoration-none" target="_blank">
+                <i class="bi bi-twitter"></i>
+              </a>
+              <a href="https://www.instagram.com/" class="me-4 text-reset text-decoration-none" target="_blank">
+                <i class="bi bi-instagram"></i>
+              </a>
+            </div>
+
           </div>
         </div>
       </nav>
@@ -71,35 +82,24 @@
               aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
               aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-              aria-label="Slide 3"></button>
+
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="./img/img1.jpeg" class="d-block w-100" alt="..." />
+              <img src="./img/acuerdo.jpg" class="d-block w-100" alt="Primera imagen del carrusel" />
               <div class="carousel-caption d-none d-md-block">
-                <h5>First slide label</h5>
+                <h5>SR Escribanía</h5>
                 <p>
-                  Some representative placeholder content for the first slide.
+                  Siempre a su servicio. Garantía de confianza.
                 </p>
               </div>
             </div>
             <div class="carousel-item">
-              <img src="./img/img1.jpeg" class="d-block w-100" alt="..." />
+              <img src="./img/firma.jpg" class="d-block w-100" alt="Segunda imagen del carrusel" />
               <div class="carousel-caption d-none d-md-block">
-                <h5>Second slide label</h5>
+                <h5>SR Escribanía</h5>
                 <p>
-                  Some representative placeholder content for the second
-                  slide.
-                </p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img src="./img/img1.jpeg" class="d-block w-100" alt="..." />
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Third slide label</h5>
-                <p>
-                  Some representative placeholder content for the third slide.
+                  Inmediatez - Confianza - Experiencia
                 </p>
               </div>
             </div>
@@ -117,52 +117,71 @@
         </div>
       </div>
       <div class="container">
-        <h1>Lorem ipsum dolor sit amet.</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+        <h1 class="text-center" data-aos="fade-down" data-aos-delay="300">Lorem ipsum dolor sit amet.</h1>
+        <p data-aos="fade-right" data-aos-delay="450">
+          Lorem ipsum dolor sit <strong>amet consectetur adipisicing elit.</strong> Suscipit
           cumque aperiam quasi aut minima molestias laborum dolores beatae
           porro quas?
         </p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla
-          architecto consequatur totam sit dolor non, neque dolores quia
-          corrupti aut!
+        <ul data-aos="fade-right" data-aos-delay="450">
+          <li>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+          </li>
+          <li>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique, odio!</p>
+          </li>
+          <li>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque similique, atque voluptas vel facilis
+              obcaecati!</p>
+          </li>
+        </ul>
+        <h2 class="text-center" data-aos="fade-down" data-aos-delay="500">Lorem ipsum dolor sit.</h2>
+        <p data-aos="fade-right" data-aos-delay="800">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Non voluptate distinctio laudantium magni officia
+          quam? Provident reprehenderit ut magni assumenda libero omnis? Doloremque voluptatum impedit hic iusto!
+          Aperiam consequuntur alias, maxime voluptas iste praesentium suscipit, eligendi molestiae molestias tempore a
+          explicabo veritatis quo! Ad facere neque rem asperiores tempore possimus.
         </p>
-        <p>
+
+        <p data-aos="fade-right" data-aos-delay="1100">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt iure
           iste nostrum cum est temporibus tempora repellendus unde non a.
         </p>
-        <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="row row-cols-1 row-cols-md-3 g-4 mt-5" data-aos="fade-right" data-aos-delay="1400"
+          data-aos-duration="2000">
           <div class="col">
             <div class="card h-100">
-              <img src="img/trabajo.png" class="card-img-top" alt="..." />
+              <img src="img/inmediatez-m.png" class="card-img-top p-2" alt="logo de inmediatez en el trabajo" />
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
+                <h5 class="card-title text-center">Inmediatez</h5>
                 <p class="card-text">
-                  This is a longer card with supporting text below as a
-                  natural lead-in to additional content. This content is a
-                  little bit longer.
+                  Es la cualidad de ser inmediato, y es una de nuestras principales caracteristicas manteniendo el
+                  profesionalismo que nos identifica desde siempre. Lorem ipsum, dolor sit amet consectetur adipisicing
+                  elit.
                 </p>
               </div>
             </div>
           </div>
           <div class="col">
             <div class="card h-100">
-              <img src="img/trabajo.png" class="card-img-top" alt="..." />
+              <img src="img/confianza-m.png" class="card-img-top p-2" alt="logo de confianza en el trabajo" />
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a short card.</p>
+                <h5 class="card-title text-center">Confianza</h5>
+                <p class="card-text">Esperanza firme que una persona tiene en que algo suceda, sea o funcione de una
+                  forma determinada, o en que otra persona actúe como ella desea. SR Escribanía brinda la confianza a la
+                  altura de las circunstancias.</p>
               </div>
             </div>
           </div>
           <div class="col">
             <div class="card h-100">
-              <img src="img/trabajo.png" class="card-img-top" alt="..." />
+              <img src="img/experiencia-m.png" class="card-img-top p-2" alt="logo de experiencia en el trabajo" />
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
+                <h5 class="card-title text-center">Experiencia</h5>
                 <p class="card-text">
-                  This is a longer card with supporting text below as a
-                  natural lead-in to additional content.
+                  Conocimiento de algo, o habilidad para ello, que se adquiere al haberlo realizado, vivido, sentido o
+                  sufrido una o más veces. Es nuestra principal caracteristica fundamentada en los años y generaciones
+                  que nuestra familia ha trabajado en el rubro
                 </p>
               </div>
             </div>
@@ -170,40 +189,39 @@
         </div>
       </div>
     </main>
-    <!-- Footer -->
+
     <footer class="text-center text-lg-start bg-light text-muted">
-      <!-- Section: Social media -->
+
       <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-        <!-- Left -->
+
         <div class="me-5 d-none d-lg-block">
           <span>Contactanos a traves de nuestras redes sociales</span>
         </div>
-        <!-- Left -->
 
-        <!-- Right -->
+
+
         <div>
-          <a href="" class="me-4 text-reset text-decoration-none">
+          <a href="https://www.facebook.com/" class="me-4 text-reset text-decoration-none" target="_blank">
             <i class="bi bi-facebook"></i>
           </a>
-          <a href="" class="me-4 text-reset text-decoration-none">
+          <a href="https://twitter.com/" class="me-4 text-reset text-decoration-none" target="_blank">
             <i class="bi bi-twitter"></i>
           </a>
-          <a href="" class="me-4 text-reset text-decoration-none">
-            <i class="bi bi-google"></i>
+          <a href="https://www.instagram.com/" class="me-4 text-reset text-decoration-none" target="_blank">
+            <i class="bi bi-instagram"></i>
           </a>
         </div>
-        <!-- Right -->
-      </section>
-      <!-- Section: Social media -->
 
-      <!-- Section: Links  -->
+      </section>
+
+
       <section class="">
         <div class="container text-center text-md-start mt-5">
-          <!-- Grid row -->
+
           <div class="row mt-3">
-            <!-- Grid column -->
+
             <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-              <!-- Content -->
+
               <h6 class="text-uppercase fw-bold mb-4">
                 <i class="bi bi-gem me-3"></i> SR Escribanía
               </h6>
@@ -213,50 +231,50 @@
                 elit.
               </p>
             </div>
-            <!-- Grid column -->
 
-            <!-- Grid column -->
             <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-              <!-- Links -->
+
               <h6 class="text-uppercase fw-bold mb-4">Servicios</h6>
-              <p>
-                <a href="#!" class="text-reset">Asesorías</a>
-              </p>
               <p>
                 <a href="#!" class="text-reset">Actas</a>
               </p>
               <p>
                 <a href="#!" class="text-reset">Certificaciones</a>
               </p>
+              <p>
+                <a href="#!" class="text-reset">Sociedades</a>
+              </p>
             </div>
-            <!-- Grid column -->
+
             <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-              <!-- Links -->
+
               <h6 class="text-uppercase fw-bold mb-4">Contacto</h6>
-              <p><i class="fas fa-home me-3"></i> 40 N° 420, La Plata, AR</p>
+              <p><i class="fas fa-home me-3"></i> 40 N° 406, La Plata, AR</p>
               <p>
                 <i class="fas fa-envelope me-3"></i>
                 vszeinfeld@gmail.com
               </p>
               <p><i class="fas fa-phone me-3"></i> + 549 221 455 6909</p>
             </div>
-            <!-- Grid column -->
+
           </div>
-          <!-- Grid row -->
+
         </div>
       </section>
-      <!-- Section: Links  -->
 
-      <!-- Copyright -->
       <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05)">
         © 2022 Copyright: SR Escribanía
         <a class="text-reset fw-bold" href="https://mdbootstrap.com/"></a>
       </div>
-      <!-- Copyright -->
+
     </footer>
-    <!-- Footer -->
+
 
   </div>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>

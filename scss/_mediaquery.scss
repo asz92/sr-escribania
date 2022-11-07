@@ -1,0 +1,15 @@
+$layout-breakpoint-small: 960px;
+
+@media (min-width: $layout-breakpoint-small) {
+  body {
+    background-image: linear-gradient(
+      10deg,
+      #9abac4 0,
+      #91a1a7 50%,
+      #86898a 100%
+    );
+    h1 {
+      color: black;
+    }
+  }
+}

@@ -1,0 +1,41 @@
+body {
+  font-family: $zen;
+  #informacion {
+    div {
+      ul {
+        li {
+          text-decoration-style: none;
+          background: linear-gradient(
+              to right,
+              rgb(255, 255, 255) 50%,
+              rgb(126, 126, 126) 50%
+            )
+            no-repeat left / 200%;
+
+          transition: background-position 0.5s ease;
+        }
+      }
+    }
+  }
+
+  #informacion {
+    div {
+      ul {
+        li:hover {
+          background-position: right;
+          color: rgb(255, 255, 255);
+          border: 1px solid #000000;
+          border-radius: 0.375rem;
+        }
+      }
+    }
+  }
+
+  .mapouter {
+    min-width: 300px;
+  }
+
+  .gmap_iframe {
+    height: 400px;
+  }
+}
